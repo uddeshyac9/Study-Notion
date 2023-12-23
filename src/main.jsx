@@ -5,11 +5,7 @@ import './index.css';
 //  import { BrowserRouter } from 'react-router-dom';
  import { Toaster } from "react-hot-toast";
  import { BrowserRouter as Router } from 'react-router-dom';
-
-
-
-
-
+   
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,7 +13,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
     <Toaster/>
   </Router>,
-   
-  
 
 )
