@@ -4,27 +4,21 @@ import App from './App.jsx'
 import './index.css';
  import { BrowserRouter } from 'react-router-dom';
  import { Toaster } from "react-hot-toast";
-//  import {createBrowserRouter} from "react-router-dom"
-// import Home from './pages/Home.jsx';
-//  const router = createBrowserRouter([
-//   {
-//     path: "/study-notion/",
-//     element: <App/>,
-//     children:[
-//       {
-//         path: "/study-notion/",
-//         element: <Home/>
-//       }
-//     ]
-//   }
-//  ]
-// )
+ import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+ const router = createBrowserRouter([
+  {
+    path: "/study-notion/",
+    element: <App/>,
+  }
+ ]
+)
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <App />
+<RouterProvider router={router} />
     <Toaster/>
   
   </BrowserRouter>,
