@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css';
 //  import { BrowserRouter } from 'react-router-dom';
  import { Toaster } from "react-hot-toast";
- import { HashRouter as Router } from 'react-router-dom';
+ import { BrowserRouter as Router } from 'react-router-dom';
 
 
 
