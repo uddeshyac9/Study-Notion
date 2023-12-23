@@ -1,7 +1,7 @@
 {
   "name": "router-dot",
   "homepage": "https://uddeshyac9.github.io/study-notion/",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
