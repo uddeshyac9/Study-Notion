@@ -18,19 +18,19 @@ function App() {
 <div className='w-screen h-[110vh] overflow-x-hidden bg-richblack-900 flex flex-col'>
   <Navbar isLoggedin={isLoggedin} setIsLoggedin={setIsLoggedin}/>
   <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='/login' element={<Login setIsLoggedin={setIsLoggedin}/>}/>
-    <Route path='/signup' element={<SignUp setIsLoggedin={setIsLoggedin}/>}/>
+    <Route path='/study-notion/' element={<Home/>}/>
+    <Route path='/study-notion/login' element={<Login setIsLoggedin={setIsLoggedin}/>}/>
+    <Route path='/study-notion/signup' element={<SignUp setIsLoggedin={setIsLoggedin}/>}/>
      
-          <Route path="/dashboard" element={ 
+          <Route path="/study-notion/dashboard" element={ 
              <PrivateRoute  isLoggedin={isLoggedin}>
           <Dashboard />
           </PrivateRoute>
           
           } />
        
-    <Route path='/about' element={<About/>}/>
-    <Route path='/contact' element={<Contact/>}/>
+    <Route path='/study-notion/about' element={<About/>}/>
+    <Route path='/study-notion/contact' element={<Contact/>}/>
 
  
   </Routes>
