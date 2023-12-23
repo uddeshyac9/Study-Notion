@@ -18,7 +18,7 @@ function App() {
 <div className='w-screen h-[110vh] overflow-x-hidden bg-richblack-900 flex flex-col'>
   <Navbar isLoggedin={isLoggedin} setIsLoggedin={setIsLoggedin}/>
   <Routes>
-    <Route path='/' element={<Home/>}/>
+    <Route index='/' element={<Home/>}/>
     <Route path='/login' element={<Login setIsLoggedin={setIsLoggedin}/>}/>
     <Route path='/signup' element={<SignUp setIsLoggedin={setIsLoggedin}/>}/>
      

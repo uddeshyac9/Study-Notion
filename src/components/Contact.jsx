@@ -1,6 +1,10 @@
 import React from 'react'
 
 function Contact() {
+    const handleSubmit = (event) => {
+        event.preventDefault(); // This prevents the default form submission behavior
+
+    }
     return (
         <div className="relative flex items-start justify-center min-h-[700px]  sm:items-center sm:pt-0">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8 bg-gray-300 rounded-xl">
@@ -127,8 +131,8 @@ function Contact() {
                             />
                         </div>
     
-                        <button
-                            type="submit"
+                        <button onClick={handleSubmit}
+                            // type="submit"
                             className="md:w-32 bg-orange-700 hover:bg-blue-dark  text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
                         >
                             Submit
