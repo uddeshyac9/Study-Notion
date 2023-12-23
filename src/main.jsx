@@ -13,7 +13,7 @@ import './index.css';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Router basename="/study-notion/">
+  <Router basename="/study-notion">
     <App />
     <Toaster/>
   </Router>,
